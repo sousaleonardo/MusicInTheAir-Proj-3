@@ -29,6 +29,7 @@
 		C554835818BE78B600756EFC /* nota2.png in Resources */ = {isa = PBXBuildFile; fileRef = C554835618BE78B600756EFC /* nota2.png */; };
 		C554835B18BE7B3700756EFC /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = C554835A18BE7B3700756EFC /* beep.wav */; };
 		C554835E18BE81FD00756EFC /* NotaMusical.m in Sources */ = {isa = PBXBuildFile; fileRef = C554835D18BE81FD00756EFC /* NotaMusical.m */; };
+		C554836018BE8D5700756EFC /* NotaMusical in Resources */ = {isa = PBXBuildFile; fileRef = C554835F18BE8D5700756EFC /* NotaMusical */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		C554835A18BE7B3700756EFC /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		C554835C18BE81FD00756EFC /* NotaMusical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotaMusical.h; path = ../NotaMusical.h; sourceTree = "<group>"; };
 		C554835D18BE81FD00756EFC /* NotaMusical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotaMusical.m; path = ../NotaMusical.m; sourceTree = "<group>"; };
+		C554835F18BE8D5700756EFC /* NotaMusical */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NotaMusical; path = ../../../../../Desktop/NotaMusical; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				C551389418BE614B00DFA12E /* MyScene.m */,
 				C554835C18BE81FD00756EFC /* NotaMusical.h */,
 				C554835D18BE81FD00756EFC /* NotaMusical.m */,
+				C554835F18BE8D5700756EFC /* NotaMusical */,
 				C551389818BE614B00DFA12E /* Images.xcassets */,
 				C551387F18BE614B00DFA12E /* Supporting Files */,
 			);
@@ -280,6 +283,7 @@
 				C554835718BE78B600756EFC /* nota1.png in Resources */,
 				C551388C18BE614B00DFA12E /* Main_iPhone.storyboard in Resources */,
 				C551388318BE614B00DFA12E /* InfoPlist.strings in Resources */,
+				C554836018BE8D5700756EFC /* NotaMusical in Resources */,
 				C554835818BE78B600756EFC /* nota2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
