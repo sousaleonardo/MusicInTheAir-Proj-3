@@ -25,6 +25,7 @@
 		C55138A218BE614C00DFA12E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387A18BE614B00DFA12E /* UIKit.framework */; };
 		C55138AA18BE614C00DFA12E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C55138A818BE614C00DFA12E /* InfoPlist.strings */; };
 		C55138AC18BE614C00DFA12E /* MusicInTheAir_Proj_3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C55138AB18BE614C00DFA12E /* MusicInTheAir_Proj_3Tests.m */; };
+		C554834D18BE6D1100756EFC /* NotaMusical.m in Sources */ = {isa = PBXBuildFile; fileRef = C554834C18BE6D1100756EFC /* NotaMusical.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		C55138A718BE614C00DFA12E /* MusicInTheAir-Proj 3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicInTheAir-Proj 3Tests-Info.plist"; sourceTree = "<group>"; };
 		C55138A918BE614C00DFA12E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C55138AB18BE614C00DFA12E /* MusicInTheAir_Proj_3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicInTheAir_Proj_3Tests.m; sourceTree = "<group>"; };
+		C554834B18BE6D1100756EFC /* NotaMusical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotaMusical.h; sourceTree = "<group>"; };
+		C554834C18BE6D1100756EFC /* NotaMusical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotaMusical.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				C551389118BE614B00DFA12E /* ViewController.m */,
 				C551389318BE614B00DFA12E /* MyScene.h */,
 				C551389418BE614B00DFA12E /* MyScene.m */,
+				C554834B18BE6D1100756EFC /* NotaMusical.h */,
+				C554834C18BE6D1100756EFC /* NotaMusical.m */,
 				C551389618BE614B00DFA12E /* Spaceship.png */,
 				C551389818BE614B00DFA12E /* Images.xcassets */,
 				C551387F18BE614B00DFA12E /* Supporting Files */,
@@ -270,6 +275,7 @@
 				C551389218BE614B00DFA12E /* ViewController.m in Sources */,
 				C551388918BE614B00DFA12E /* AppDelegate.m in Sources */,
 				C551388518BE614B00DFA12E /* main.m in Sources */,
+				C554834D18BE6D1100756EFC /* NotaMusical.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +496,7 @@
 				C55138B118BE614C00DFA12E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C55138B218BE614C00DFA12E /* Build configuration list for PBXNativeTarget "MusicInTheAir-Proj 3Tests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +505,7 @@
 				C55138B418BE614C00DFA12E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
