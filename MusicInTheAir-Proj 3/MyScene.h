@@ -7,6 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "NotaMusical.h"
 
 @interface MyScene : SKScene
 

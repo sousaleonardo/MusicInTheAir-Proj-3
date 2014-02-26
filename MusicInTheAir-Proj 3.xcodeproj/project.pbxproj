@@ -18,14 +18,17 @@
 		C551388F18BE614B00DFA12E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C551388D18BE614B00DFA12E /* Main_iPad.storyboard */; };
 		C551389218BE614B00DFA12E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C551389118BE614B00DFA12E /* ViewController.m */; };
 		C551389518BE614B00DFA12E /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C551389418BE614B00DFA12E /* MyScene.m */; };
-		C551389718BE614B00DFA12E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = C551389618BE614B00DFA12E /* Spaceship.png */; };
 		C551389918BE614B00DFA12E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C551389818BE614B00DFA12E /* Images.xcassets */; };
 		C55138A018BE614B00DFA12E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551389F18BE614B00DFA12E /* XCTest.framework */; };
 		C55138A118BE614B00DFA12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387618BE614B00DFA12E /* Foundation.framework */; };
 		C55138A218BE614C00DFA12E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387A18BE614B00DFA12E /* UIKit.framework */; };
 		C55138AA18BE614C00DFA12E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C55138A818BE614C00DFA12E /* InfoPlist.strings */; };
 		C55138AC18BE614C00DFA12E /* MusicInTheAir_Proj_3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C55138AB18BE614C00DFA12E /* MusicInTheAir_Proj_3Tests.m */; };
-		C554834D18BE6D1100756EFC /* NotaMusical.m in Sources */ = {isa = PBXBuildFile; fileRef = C554834C18BE6D1100756EFC /* NotaMusical.m */; };
+		C554835418BE785F00756EFC /* nota3.png in Resources */ = {isa = PBXBuildFile; fileRef = C554835118BE785F00756EFC /* nota3.png */; };
+		C554835718BE78B600756EFC /* nota1.png in Resources */ = {isa = PBXBuildFile; fileRef = C554835518BE78B600756EFC /* nota1.png */; };
+		C554835818BE78B600756EFC /* nota2.png in Resources */ = {isa = PBXBuildFile; fileRef = C554835618BE78B600756EFC /* nota2.png */; };
+		C554835B18BE7B3700756EFC /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = C554835A18BE7B3700756EFC /* beep.wav */; };
+		C554835E18BE81FD00756EFC /* NotaMusical.m in Sources */ = {isa = PBXBuildFile; fileRef = C554835D18BE81FD00756EFC /* NotaMusical.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,15 +59,18 @@
 		C551389118BE614B00DFA12E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C551389318BE614B00DFA12E /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		C551389418BE614B00DFA12E /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		C551389618BE614B00DFA12E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		C551389818BE614B00DFA12E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C551389E18BE614B00DFA12E /* MusicInTheAir-Proj 3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicInTheAir-Proj 3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C551389F18BE614B00DFA12E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C55138A718BE614C00DFA12E /* MusicInTheAir-Proj 3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicInTheAir-Proj 3Tests-Info.plist"; sourceTree = "<group>"; };
 		C55138A918BE614C00DFA12E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C55138AB18BE614C00DFA12E /* MusicInTheAir_Proj_3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicInTheAir_Proj_3Tests.m; sourceTree = "<group>"; };
-		C554834B18BE6D1100756EFC /* NotaMusical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotaMusical.h; sourceTree = "<group>"; };
-		C554834C18BE6D1100756EFC /* NotaMusical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotaMusical.m; sourceTree = "<group>"; };
+		C554835118BE785F00756EFC /* nota3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nota3.png; sourceTree = "<group>"; };
+		C554835518BE78B600756EFC /* nota1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nota1.png; sourceTree = "<group>"; };
+		C554835618BE78B600756EFC /* nota2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nota2.png; sourceTree = "<group>"; };
+		C554835A18BE7B3700756EFC /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		C554835C18BE81FD00756EFC /* NotaMusical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotaMusical.h; path = ../NotaMusical.h; sourceTree = "<group>"; };
+		C554835D18BE81FD00756EFC /* NotaMusical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotaMusical.m; path = ../NotaMusical.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,8 @@
 		C551387E18BE614B00DFA12E /* MusicInTheAir-Proj 3 */ = {
 			isa = PBXGroup;
 			children = (
+				C554835918BE7B3700756EFC /* Sons */,
+				C554834E18BE785F00756EFC /* Imagens */,
 				C551388718BE614B00DFA12E /* AppDelegate.h */,
 				C551388818BE614B00DFA12E /* AppDelegate.m */,
 				C551388A18BE614B00DFA12E /* Main_iPhone.storyboard */,
@@ -134,9 +142,8 @@
 				C551389118BE614B00DFA12E /* ViewController.m */,
 				C551389318BE614B00DFA12E /* MyScene.h */,
 				C551389418BE614B00DFA12E /* MyScene.m */,
-				C554834B18BE6D1100756EFC /* NotaMusical.h */,
-				C554834C18BE6D1100756EFC /* NotaMusical.m */,
-				C551389618BE614B00DFA12E /* Spaceship.png */,
+				C554835C18BE81FD00756EFC /* NotaMusical.h */,
+				C554835D18BE81FD00756EFC /* NotaMusical.m */,
 				C551389818BE614B00DFA12E /* Images.xcassets */,
 				C551387F18BE614B00DFA12E /* Supporting Files */,
 			);
@@ -170,6 +177,24 @@
 				C55138A818BE614C00DFA12E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C554834E18BE785F00756EFC /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				C554835518BE78B600756EFC /* nota1.png */,
+				C554835618BE78B600756EFC /* nota2.png */,
+				C554835118BE785F00756EFC /* nota3.png */,
+			);
+			path = Imagens;
+			sourceTree = "<group>";
+		};
+		C554835918BE7B3700756EFC /* Sons */ = {
+			isa = PBXGroup;
+			children = (
+				C554835A18BE7B3700756EFC /* beep.wav */,
+			);
+			path = Sons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,11 +273,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C551389718BE614B00DFA12E /* Spaceship.png in Resources */,
+				C554835B18BE7B3700756EFC /* beep.wav in Resources */,
 				C551389918BE614B00DFA12E /* Images.xcassets in Resources */,
 				C551388F18BE614B00DFA12E /* Main_iPad.storyboard in Resources */,
+				C554835418BE785F00756EFC /* nota3.png in Resources */,
+				C554835718BE78B600756EFC /* nota1.png in Resources */,
 				C551388C18BE614B00DFA12E /* Main_iPhone.storyboard in Resources */,
 				C551388318BE614B00DFA12E /* InfoPlist.strings in Resources */,
+				C554835818BE78B600756EFC /* nota2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +303,7 @@
 				C551389218BE614B00DFA12E /* ViewController.m in Sources */,
 				C551388918BE614B00DFA12E /* AppDelegate.m in Sources */,
 				C551388518BE614B00DFA12E /* main.m in Sources */,
-				C554834D18BE6D1100756EFC /* NotaMusical.m in Sources */,
+				C554835E18BE81FD00756EFC /* NotaMusical.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

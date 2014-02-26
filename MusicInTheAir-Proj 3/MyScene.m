@@ -10,20 +10,28 @@
 
 @implementation MyScene
 
--(id)initWithSize:(CGSize)size {    
-    if (self = [super initWithSize:size]) {
-        //Configuração inicial da SKScene
+-(id)initWithSize:(CGSize)size {
+    if (self = [super initWithSize:size]){
         
+        //Define a cor do fundo - Mudar p imagem =P
+        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        
+        //Define a gravidade da SKScene
+        self.physicsWorld.gravity=CGVectorMake(0, -10);
     }
     return self;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-
+    NotaMusical *nota=[[NotaMusical alloc]initNota:@"beep.wav"];
+    
+    [nota setPosition:CGPointMake(100, 900)];
+    [self addChild:nota];
+    
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-
+    
 }
 
 @end
