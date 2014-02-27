@@ -20,7 +20,6 @@
         NSString *nomeImagem=[NSString stringWithFormat:@"nota%d",(arc4random()%2+1)];
 
         //Define a imagem da nota
-        //[self setImagem:[SKSpriteNode spriteNodeWithImageNamed:nomeImagem]];
         SKSpriteNode *imagemNota=[SKSpriteNode spriteNodeWithImageNamed:nomeImagem];
         
         //Define o som que será tocado ao ocorrer a colisão com o
@@ -40,8 +39,6 @@
         
         [self addChild:imagemNota];
     }
-    
-    //Juh se vc ler isso deu certo!
     
     return self;
 }

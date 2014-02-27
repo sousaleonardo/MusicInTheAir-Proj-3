@@ -11,4 +11,5 @@
 
 @interface MyScene : SKScene
 
+@property 
 @end
