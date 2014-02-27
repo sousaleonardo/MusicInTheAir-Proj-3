@@ -25,6 +25,8 @@
         
         //Define a gravidade da SKScene
         self.physicsWorld.gravity=CGVectorMake(0, -10);
+        
+        [self calcularPosicoesX];
     }
     
     return self;
@@ -42,10 +44,18 @@
     
 }
 
--(NSArray*)calcularPosicoesX{
+-(void)calcularPosicoesX{
 //Irá pegar o tamanho da tela e gerar um array com o ponto medio de cada terço da view
     
-    return 0;
+    //Define o tamanho padrão do bloco
+    CGFloat bloco=self.size.width/3;
+    
+    //Cria uma variavel tratando cada bloco de posição
+    NSNumber *posicao1=[NSNumber numberWithInt:bloco/2];
+    NSNumber *posicao2=[NSNumber numberWithInt:(bloco/2) + bloco];
+    NSNumber *posicao3=[[NSNumber numberWithInt: (bloco/2)+(bloco*2)];
+    
+    [[self posicoesX]arrayByAddingObject:(id)posicao1,posicao2,posicao3)];
 }
 
 

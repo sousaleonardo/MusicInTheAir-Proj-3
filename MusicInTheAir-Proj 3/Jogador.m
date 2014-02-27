@@ -27,6 +27,5 @@
     //chama a animaçao
     
 }
--
 
 @end
