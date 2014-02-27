@@ -8,11 +8,9 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface NotaMusical : SKSpriteNode
+@interface NotaMusical : SKNode
 
-@property SKSpriteNode *imagem;
 @property NSString *som;
-
 
 -(id)initNota:(NSString*)nomeSom;
 -(void)tocarSom;

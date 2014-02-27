@@ -10,7 +10,7 @@
 
 @implementation NotaMusical
 
-@synthesize imagem,som;
+@synthesize som;
 
 -(id)initNota:(NSString*)nomeSom{
     self=[super init];
@@ -20,34 +20,32 @@
         NSString *nomeImagem=[NSString stringWithFormat:@"nota%d",(arc4random()%2+1)];
 
         //Define a imagem da nota
-        [self setImagem:[SKSpriteNode spriteNodeWithImageNamed:nomeImagem]];
+        //[self setImagem:[SKSpriteNode spriteNodeWithImageNamed:nomeImagem]];
+        SKSpriteNode *imagemNota=[SKSpriteNode spriteNodeWithImageNamed:nomeImagem];
         
         //Define o som que será tocado ao ocorrer a colisão com o
         [self setSom:nomeSom];
 
         //Corpo físico para a nota cair pela tela! :)
-        self.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:[self imagem].size];
+        imagemNota.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:imagemNota.size];
         
         //Define como dynamic para que seja afetado pela gravidade
-        self.physicsBody.dynamic=YES;
+        imagemNota.physicsBody.dynamic=YES;
 
         //Não deixa ele rodar pela tela
-        self.physicsBody.allowsRotation=NO;
+        imagemNota.physicsBody.allowsRotation=NO;
         
         //definir o tamanho da imagem. tks Juh :)
-        [self setScale:0.2];
+        [imagemNota setScale:0.2];
         
-        [self addChild:self.imagem];
-        
+        [self addChild:imagemNota];
     }
     
     return self;
 }
 
 -(void)tocarSom{
-    
     [self runAction:[SKAction playSoundFileNamed:[self som] waitForCompletion:NO]];
-    
 }
 
 @end
