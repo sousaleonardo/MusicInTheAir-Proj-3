@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C98145518BFB7D1008D77C6 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C98145418BFB7D1008D77C6 /* Jogador.m */; };
 		C551387718BE614B00DFA12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387618BE614B00DFA12E /* Foundation.framework */; };
 		C551387918BE614B00DFA12E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387818BE614B00DFA12E /* CoreGraphics.framework */; };
 		C551387B18BE614B00DFA12E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387A18BE614B00DFA12E /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C98145318BFB7D1008D77C6 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jogador.h; path = "../../MusicInTheAir/MusicInTheAir-Proj 3/Jogador.h"; sourceTree = "<group>"; };
+		3C98145418BFB7D1008D77C6 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jogador.m; path = "../../MusicInTheAir/MusicInTheAir-Proj 3/Jogador.m"; sourceTree = "<group>"; };
 		C551387318BE614B00DFA12E /* MusicInTheAir-Proj 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicInTheAir-Proj 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C551387618BE614B00DFA12E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C551387818BE614B00DFA12E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 				C554835918BE7B3700756EFC /* Sons */,
 				C554834E18BE785F00756EFC /* Imagens */,
 				C551388718BE614B00DFA12E /* AppDelegate.h */,
+				3C98145318BFB7D1008D77C6 /* Jogador.h */,
+				3C98145418BFB7D1008D77C6 /* Jogador.m */,
 				C551388818BE614B00DFA12E /* AppDelegate.m */,
 				C551388A18BE614B00DFA12E /* Main_iPhone.storyboard */,
 				C551388D18BE614B00DFA12E /* Main_iPad.storyboard */,
@@ -303,6 +308,7 @@
 				C551389218BE614B00DFA12E /* ViewController.m in Sources */,
 				C551388918BE614B00DFA12E /* AppDelegate.m in Sources */,
 				C551388518BE614B00DFA12E /* main.m in Sources */,
+				3C98145518BFB7D1008D77C6 /* Jogador.m in Sources */,
 				C554836318BE8E0100756EFC /* NotaMusical.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
