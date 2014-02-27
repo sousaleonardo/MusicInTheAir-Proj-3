@@ -10,10 +10,15 @@
 
 @implementation MyScene
 
-//este eh o meu teste - julia
+@synthesize posicaoX,moverDir,moverEsq;
 
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]){
+        
+        //Cria botão direita e esquerda
+         //--
+        
+        //Chama função para preencher o bloco de posições X
         
         //Define a cor do fundo - Mudar p imagem =P
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
@@ -21,6 +26,7 @@
         //Define a gravidade da SKScene
         self.physicsWorld.gravity=CGVectorMake(0, -10);
     }
+    
     return self;
 }
 
@@ -35,5 +41,13 @@
 -(void)update:(CFTimeInterval)currentTime {
     
 }
+
+-(NSArray*)calcularPosicoesX{
+//Irá pegar o tamanho da tela e gerar um array com o ponto medio de cada terço da view
+    
+    return 0;
+}
+
+
 
 @end
