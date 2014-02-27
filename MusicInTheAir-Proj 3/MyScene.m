@@ -10,8 +10,6 @@
 
 @implementation MyScene
 
-//este eh o meu teste - julia
-
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]){
         
