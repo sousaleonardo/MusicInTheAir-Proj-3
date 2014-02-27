@@ -41,6 +41,8 @@
         [self addChild:imagemNota];
     }
     
+    //Juh se vc ler isso deu certo!
+    
     return self;
 }
 
