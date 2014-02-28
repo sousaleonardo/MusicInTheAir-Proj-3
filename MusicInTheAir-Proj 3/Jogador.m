@@ -10,10 +10,12 @@
 
 @implementation Jogador
 
--(id)initWithImageNamed:(NSString *)name 
+-(id)initWithImageNamed:(NSString *)name :(float)posicao
 {
     if (self = [super initWithImageNamed:name]) {
+        //define a posicao atual do jogador
         self.posicaoAtual = 1;
+        [self setPosition:CGPointMake(posicao, 20)];
     
     }
     return self;
@@ -21,12 +23,22 @@
     
 }
 -(void)movimentar :(int)posicao
-{
+{   //muda a posicao atual do jogador
+    if (self.position.x > posicao) {
+        self.posicaoAtual++;
+    }
+    else
+        self.posicaoAtual--;
+    
+    //comeca a mover o jogador
     SKAction *mover = [SKAction moveToX:posicao duration:0.5];
     [self runAction:mover];
     //chama a animaçao
     
 }
--
+
+
+
+
 
 @end

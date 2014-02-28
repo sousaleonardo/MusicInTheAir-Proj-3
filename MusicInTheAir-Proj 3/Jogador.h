@@ -11,9 +11,10 @@
 @interface Jogador : SKSpriteNode
 
 @property int posicaoAtual;
+@property NSArray *framesAnimacao;
 
 
--(id)initWithImageNamed:(NSString *)name;
+-(id)initWithImageNamed:(NSString *)name :(float)posicao;
 -(void)movimentar :(int)posicao;
 
 @end
