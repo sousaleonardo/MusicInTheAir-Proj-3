@@ -15,6 +15,7 @@
 
 //Alterado o método construtor
 //-(id)initWithImageNamed:(NSString *)name :(float)posicao;
+-(id)initJogador:(int)posicaoInicial :(float)posicaoX;
 -(void)movimentar :(int)posicao;
 
 @end

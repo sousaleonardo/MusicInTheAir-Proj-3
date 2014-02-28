@@ -26,25 +26,38 @@
         //Define a gravidade da SKScene
         self.physicsWorld.gravity=CGVectorMake(0, -10);
         
+        //Determina o delegate para colisão como a propria SKScene
+        self.physicsWorld.contactDelegate=self;
+        
         [self calcularPosicoesX];
         
         //Cria um jogador
-        Jogador *jogador=[[Jogador alloc]initWithImageNamed:@"nota1"];
+        Jogador *jogador=[[Jogador alloc]initJogador:1 :self->posicoesX[0]];
         
         [jogador setPosicaoAtual:0];
         [jogador setPosition:CGPointMake(self->posicoesX[0], 100)];
 
         //Define a categoria p jogador e com qual categoria ele colidirá
-        jogador.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:jogador.size];
-        jogador.physicsBody.dynamic=NO;
-        
         jogador.physicsBody.categoryBitMask=JogadorCategory;
         jogador.physicsBody.contactTestBitMask=NotaCategory;
         
+        
+        SKSpriteNode *not=[SKSpriteNode spriteNodeWithImageNamed:@"nota1"];
+        
+        [not setScale:0.2];
+        [not setPosition:CGPointMake(self->posicoesX[0], 900)];
+        not.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:not.size];
+        not.physicsBody.dynamic=YES ;
+        
+        not.physicsBody.categoryBitMask=NotaCategory;
+        not.physicsBody.contactTestBitMask=JogadorCategory;
+        
+        [self addChild:not];
         [self addChild:jogador];
         
-        [self criarNotas];
+            NSLog(@"carregou");
     }
+         
     
     return self;
 }
@@ -81,21 +94,20 @@
     nota.physicsBody.categoryBitMask=NotaCategory;
     nota.physicsBody.contactTestBitMask=JogadorCategory;
     
-    //int posicaoX=arc4random()%2;
-    int posicaoX=0;
+    int posicaoX=arc4random()%2;
     
     [nota setPosition:CGPointMake(self->posicoesX[posicaoX], self.size.height)];
-    
     [self addChild:nota];
 }
 -(void)tocarNota:(NotaMusical*)nota{
     [nota tocarSom];
     NSLog(@"colisão");
 }
+
 -(void)didBeginContact:(SKPhysicsContact *)contact{
   //  if(self.perdeu)
-        return;
-    
+       // return;
+    NSLog(@"colidiu");
     // Organiza os corpos de acordo com o valor da categoria. Isto é feito para facilitar a comparação mais em baixo
     SKPhysicsBody *firstBody, *secondBody;
     

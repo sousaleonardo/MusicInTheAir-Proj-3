@@ -33,7 +33,7 @@
     return self;
 }
  */
--(id)initJogador:(float)posicaoInicialX{
+-(id)initJogador:(int)posicaoInicial :(float)posicaoX{
     self =[super init];
     
     if (self!=nil) {
@@ -65,9 +65,4 @@
     //chama a animaçao
     
 }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> FETCH_HEAD
 @end

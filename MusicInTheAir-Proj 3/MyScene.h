@@ -14,7 +14,7 @@ static const UInt32 NotaCategory = 0x1 << 0;
 static const UInt32 JogadorCategory = 0x1 << 1;
 
 //Adcionado o delgate p verificar contato
-@interface MyScene : SKScene<SKPhysicsContactDelegate>
+@interface MyScene : SKScene <SKPhysicsContactDelegate>
 
 {
     float posicoesX[3];
@@ -22,6 +22,7 @@ static const UInt32 JogadorCategory = 0x1 << 1;
     //controalar a frequencia de criação das notas
     double timerUpdate;
 }
+
 @property UIButton *moverDir;
 @property UIButton *moverEsq;
 
