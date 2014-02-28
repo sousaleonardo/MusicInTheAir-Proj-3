@@ -36,12 +36,6 @@
     //chama a animaçao
     
 }
-<<<<<<< HEAD
 
-
-
-
-=======
->>>>>>> FETCH_HEAD
 
 @end
