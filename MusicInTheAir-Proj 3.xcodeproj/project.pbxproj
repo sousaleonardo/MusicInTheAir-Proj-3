@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		3C9BECEE18C10C17000468B8 /* CenaMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BECED18C10C17000468B8 /* CenaMenu.m */; };
 		3C9BECF118C10E60000468B8 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BECF018C10E60000468B8 /* Jogador.m */; };
+=======
+		C54044D318BFD95200676D50 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = C54044D218BFD95200676D50 /* Jogador.m */; };
+>>>>>>> FETCH_HEAD
 		C551387718BE614B00DFA12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387618BE614B00DFA12E /* Foundation.framework */; };
 		C551387918BE614B00DFA12E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387818BE614B00DFA12E /* CoreGraphics.framework */; };
 		C551387B18BE614B00DFA12E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387A18BE614B00DFA12E /* UIKit.framework */; };
@@ -44,10 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		3C9BECEC18C10C17000468B8 /* CenaMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenaMenu.h; sourceTree = "<group>"; };
 		3C9BECED18C10C17000468B8 /* CenaMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenaMenu.m; sourceTree = "<group>"; };
 		3C9BECEF18C10E60000468B8 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
 		3C9BECF018C10E60000468B8 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+=======
+		C54044D118BFD95200676D50 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		C54044D218BFD95200676D50 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+>>>>>>> FETCH_HEAD
 		C551387318BE614B00DFA12E /* MusicInTheAir-Proj 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicInTheAir-Proj 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C551387618BE614B00DFA12E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C551387818BE614B00DFA12E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -141,8 +150,13 @@
 				C554835918BE7B3700756EFC /* Sons */,
 				C554834E18BE785F00756EFC /* Imagens */,
 				C551388718BE614B00DFA12E /* AppDelegate.h */,
+<<<<<<< HEAD
 				3C9BECEF18C10E60000468B8 /* Jogador.h */,
 				3C9BECF018C10E60000468B8 /* Jogador.m */,
+=======
+				C54044D118BFD95200676D50 /* Jogador.h */,
+				C54044D218BFD95200676D50 /* Jogador.m */,
+>>>>>>> FETCH_HEAD
 				C551388818BE614B00DFA12E /* AppDelegate.m */,
 				C551388A18BE614B00DFA12E /* Main_iPhone.storyboard */,
 				C551388D18BE614B00DFA12E /* Main_iPad.storyboard */,
@@ -315,6 +329,10 @@
 				C551388918BE614B00DFA12E /* AppDelegate.m in Sources */,
 				3C9BECF118C10E60000468B8 /* Jogador.m in Sources */,
 				C551388518BE614B00DFA12E /* main.m in Sources */,
+<<<<<<< HEAD
+=======
+				C54044D318BFD95200676D50 /* Jogador.m in Sources */,
+>>>>>>> FETCH_HEAD
 				C554836318BE8E0100756EFC /* NotaMusical.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
