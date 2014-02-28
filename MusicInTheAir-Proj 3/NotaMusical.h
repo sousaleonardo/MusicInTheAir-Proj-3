@@ -7,7 +7,6 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-static const UInt32 NotaCategory = 0x1 << 0;
 
 @interface NotaMusical : SKNode
 
