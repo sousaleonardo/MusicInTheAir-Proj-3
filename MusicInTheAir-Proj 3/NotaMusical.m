@@ -43,11 +43,11 @@
         //Define a elasticidade da nota musical
         imagemNota.physicsBody.restitution=0;
         
-        //Define atrito com o ar
-        imagemNota.physicsBody.linearDamping=1;
+        //Determina a categoria da nota, para tratar a colisão
+        imagemNota.physicsBody.categoryBitMask=NotaCategory;
         
-
-        
+        //Determina com qual categoria irá colidir
+        imagemNota.physicsBody.contactTestBitMask=
         
         [self addChild:imagemNota];
     }
