@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		3C9BECEE18C10C17000468B8 /* CenaMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BECED18C10C17000468B8 /* CenaMenu.m */; };
-		3C9BECF118C10E60000468B8 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BECF018C10E60000468B8 /* Jogador.m */; };
-=======
-		C54044D318BFD95200676D50 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = C54044D218BFD95200676D50 /* Jogador.m */; };
->>>>>>> FETCH_HEAD
+		3C54313018BE8D69003BE26D /* NotaMusical.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C54312F18BE8D69003BE26D /* NotaMusical.m */; };
+		3C54313318BE8DB5003BE26D /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C54313218BE8DB5003BE26D /* Jogador.m */; };
+		3C9BECF418C110A2000468B8 /* CenaMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BECF318C110A2000468B8 /* CenaMenu.m */; };
+		3C9BECF518C110A2000468B8 /* CenaMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BECF318C110A2000468B8 /* CenaMenu.m */; };
 		C551387718BE614B00DFA12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387618BE614B00DFA12E /* Foundation.framework */; };
 		C551387918BE614B00DFA12E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387818BE614B00DFA12E /* CoreGraphics.framework */; };
 		C551387B18BE614B00DFA12E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551387A18BE614B00DFA12E /* UIKit.framework */; };
@@ -34,7 +32,6 @@
 		C554835718BE78B600756EFC /* nota1.png in Resources */ = {isa = PBXBuildFile; fileRef = C554835518BE78B600756EFC /* nota1.png */; };
 		C554835818BE78B600756EFC /* nota2.png in Resources */ = {isa = PBXBuildFile; fileRef = C554835618BE78B600756EFC /* nota2.png */; };
 		C554835B18BE7B3700756EFC /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = C554835A18BE7B3700756EFC /* beep.wav */; };
-		C554836318BE8E0100756EFC /* NotaMusical.m in Sources */ = {isa = PBXBuildFile; fileRef = C554836218BE8E0100756EFC /* NotaMusical.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,15 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		3C9BECEC18C10C17000468B8 /* CenaMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenaMenu.h; sourceTree = "<group>"; };
-		3C9BECED18C10C17000468B8 /* CenaMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenaMenu.m; sourceTree = "<group>"; };
-		3C9BECEF18C10E60000468B8 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		3C9BECF018C10E60000468B8 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
-=======
-		C54044D118BFD95200676D50 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		C54044D218BFD95200676D50 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
->>>>>>> FETCH_HEAD
+		3C54312E18BE8D5D003BE26D /* NotaMusical.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotaMusical.h; sourceTree = "<group>"; };
+		3C54312F18BE8D69003BE26D /* NotaMusical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotaMusical.m; sourceTree = "<group>"; };
+		3C54313118BE8DB5003BE26D /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		3C54313218BE8DB5003BE26D /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		3C9BECF218C110A2000468B8 /* CenaMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenaMenu.h; sourceTree = "<group>"; };
+		3C9BECF318C110A2000468B8 /* CenaMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenaMenu.m; sourceTree = "<group>"; };
 		C551387318BE614B00DFA12E /* MusicInTheAir-Proj 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicInTheAir-Proj 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C551387618BE614B00DFA12E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C551387818BE614B00DFA12E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,8 +78,6 @@
 		C554835518BE78B600756EFC /* nota1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nota1.png; sourceTree = "<group>"; };
 		C554835618BE78B600756EFC /* nota2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nota2.png; sourceTree = "<group>"; };
 		C554835A18BE7B3700756EFC /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
-		C554836118BE8E0100756EFC /* NotaMusical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotaMusical.h; sourceTree = "<group>"; };
-		C554836218BE8E0100756EFC /* NotaMusical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotaMusical.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,24 +142,19 @@
 				C554835918BE7B3700756EFC /* Sons */,
 				C554834E18BE785F00756EFC /* Imagens */,
 				C551388718BE614B00DFA12E /* AppDelegate.h */,
-<<<<<<< HEAD
-				3C9BECEF18C10E60000468B8 /* Jogador.h */,
-				3C9BECF018C10E60000468B8 /* Jogador.m */,
-=======
-				C54044D118BFD95200676D50 /* Jogador.h */,
-				C54044D218BFD95200676D50 /* Jogador.m */,
->>>>>>> FETCH_HEAD
+				3C54313118BE8DB5003BE26D /* Jogador.h */,
+				3C54313218BE8DB5003BE26D /* Jogador.m */,
 				C551388818BE614B00DFA12E /* AppDelegate.m */,
 				C551388A18BE614B00DFA12E /* Main_iPhone.storyboard */,
 				C551388D18BE614B00DFA12E /* Main_iPad.storyboard */,
 				C551389018BE614B00DFA12E /* ViewController.h */,
+				3C9BECF218C110A2000468B8 /* CenaMenu.h */,
+				3C9BECF318C110A2000468B8 /* CenaMenu.m */,
 				C551389118BE614B00DFA12E /* ViewController.m */,
 				C551389318BE614B00DFA12E /* MyScene.h */,
 				C551389418BE614B00DFA12E /* MyScene.m */,
-				3C9BECEC18C10C17000468B8 /* CenaMenu.h */,
-				3C9BECED18C10C17000468B8 /* CenaMenu.m */,
-				C554836118BE8E0100756EFC /* NotaMusical.h */,
-				C554836218BE8E0100756EFC /* NotaMusical.m */,
+				3C54312F18BE8D69003BE26D /* NotaMusical.m */,
+				3C54312E18BE8D5D003BE26D /* NotaMusical.h */,
 				C551389818BE614B00DFA12E /* Images.xcassets */,
 				C551387F18BE614B00DFA12E /* Supporting Files */,
 			);
@@ -323,17 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C9BECEE18C10C17000468B8 /* CenaMenu.m in Sources */,
+				3C9BECF418C110A2000468B8 /* CenaMenu.m in Sources */,
 				C551389518BE614B00DFA12E /* MyScene.m in Sources */,
 				C551389218BE614B00DFA12E /* ViewController.m in Sources */,
 				C551388918BE614B00DFA12E /* AppDelegate.m in Sources */,
-				3C9BECF118C10E60000468B8 /* Jogador.m in Sources */,
 				C551388518BE614B00DFA12E /* main.m in Sources */,
-<<<<<<< HEAD
-=======
-				C54044D318BFD95200676D50 /* Jogador.m in Sources */,
->>>>>>> FETCH_HEAD
-				C554836318BE8E0100756EFC /* NotaMusical.m in Sources */,
+				3C54313318BE8DB5003BE26D /* Jogador.m in Sources */,
+				3C54313018BE8D69003BE26D /* NotaMusical.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55138AC18BE614C00DFA12E /* MusicInTheAir_Proj_3Tests.m in Sources */,
+				3C9BECF518C110A2000468B8 /* CenaMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
