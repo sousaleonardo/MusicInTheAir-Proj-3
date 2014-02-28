@@ -37,6 +37,18 @@
         //definir o tamanho da imagem. tks Juh :)
         [imagemNota setScale:0.2];
         
+        //Define que a nota sera afetada pela gravidade do mundo
+        imagemNota.physicsBody.affectedByGravity=YES;
+        
+        //Define a elasticidade da nota musical
+        imagemNota.physicsBody.restitution=0;
+        
+        //Define atrito com o ar
+        imagemNota.physicsBody.linearDamping=1;
+        
+
+        
+        
         [self addChild:imagemNota];
     }
     

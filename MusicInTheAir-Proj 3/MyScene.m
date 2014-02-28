@@ -10,7 +10,7 @@
 
 @implementation MyScene
 
-@synthesize posicaoX,moverDir,moverEsq;
+@synthesize moverDir,moverEsq;
 
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]){
@@ -27,6 +27,8 @@
         self.physicsWorld.gravity=CGVectorMake(0, -10);
         
         [self calcularPosicoesX];
+        
+        
     }
     
     return self;
@@ -35,9 +37,18 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     NotaMusical *nota=[[NotaMusical alloc]initNota:@"beep.wav"];
     
-    [nota setPosition:CGPointMake(100, 900)];
-    [self addChild:nota];
+    [nota setPosition:CGPointMake(self->posicoesX[0],500)];
     
+    NotaMusical *nota2=[[NotaMusical alloc]initNota:@"beep.wav"];
+    
+    [nota2 setPosition:CGPointMake(self->posicoesX[1],500)];
+    NotaMusical *nota3=[[NotaMusical alloc]initNota:@"beep.wav"];
+    
+    [nota3 setPosition:CGPointMake(self->posicoesX[2],500)];
+    
+    [self addChild:nota];
+    [self addChild:nota2];
+    [self addChild:nota3];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
@@ -51,11 +62,14 @@
     CGFloat bloco=self.size.width/3;
     
     //Cria uma variavel tratando cada bloco de posição
-    NSNumber *posicao1=[NSNumber numberWithInt:bloco/2];
-    NSNumber *posicao2=[NSNumber numberWithInt:(bloco/2) + bloco];
-    NSNumber *posicao3=[[NSNumber numberWithInt: (bloco/2)+(bloco*2)];
+    float posicao1= bloco/2;
+    float posicao2=posicao1 + bloco;
+    float posicao3=posicao2+bloco;
     
-    [[self posicoesX]arrayByAddingObject:(id)posicao1,posicao2,posicao3)];
+    self->posicoesX[0]=posicao1;
+    self->posicoesX[1]=posicao2;
+    self->posicoesX[2]=posicao3;
+    
 }
 
 

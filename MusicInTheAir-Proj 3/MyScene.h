@@ -10,8 +10,10 @@
 #import "NotaMusical.h"
 
 @interface MyScene : SKScene
-@property NSArray *posicoesX;
 
+{
+    float posicoesX[3];
+}
 @property UIButton *moverDir;
 @property UIButton *moverEsq;
 
