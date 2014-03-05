@@ -52,7 +52,8 @@
         not.physicsBody.categoryBitMask=NotaCategory;
         not.physicsBody.contactTestBitMask=JogadorCategory;
         
-        [self addChild:not];
+        [self criarNotas];
+        //[self addChild:not];
         [self addChild:jogador];
         
             NSLog(@"carregou");
@@ -94,20 +95,18 @@
     nota.physicsBody.categoryBitMask=NotaCategory;
     nota.physicsBody.contactTestBitMask=JogadorCategory;
     
-    int posicaoX=arc4random()%2;
+//    int posicaoX=arc4random()%2;
+    int posicaoX=0;
     
     [nota setPosition:CGPointMake(self->posicoesX[posicaoX], self.size.height)];
+    
     [self addChild:nota];
-}
--(void)tocarNota:(NotaMusical*)nota{
-    [nota tocarSom];
-    NSLog(@"colisão");
 }
 
 -(void)didBeginContact:(SKPhysicsContact *)contact{
   //  if(self.perdeu)
        // return;
-    NSLog(@"colidiu");
+
     // Organiza os corpos de acordo com o valor da categoria. Isto é feito para facilitar a comparação mais em baixo
     SKPhysicsBody *firstBody, *secondBody;
     
@@ -124,11 +123,21 @@
     
     
     // Compara as máscaras de categoria com os valores que nós usamos para os objetos do jogo
-    if ((firstBody.categoryBitMask & NotaCategory) != 0)
+    if ((firstBody.categoryBitMask == NotaCategory))
     {
-        [self tocarNota:firstBody];
-    }else{
-        [self tocarNota:secondBody];
+        //Animar jogador atirando
+        //Tocar som da nota acertada
+        
+        [self runAction:[SKAction playSoundFileNamed:firstBody.node.name waitForCompletion:YES]];
+        [firstBody.node removeFromParent];
+        
+    }else if(secondBody.contactTestBitMask==JogadorCategory){
+        //secondBody];
+        //NotaMusical *nota=secondBody.node.parent;
+        NSLog(@"%@", secondBody.node.name);
+        NSLog(@"%@",firstBody.node.name);
+        
+        //[nota tocarSom];
     }
 
 }

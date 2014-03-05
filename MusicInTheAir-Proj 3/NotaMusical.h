@@ -14,4 +14,5 @@
 
 -(id)initNota:(NSString*)nomeSom;
 -(void)tocarSom;
++(void)tocarSom:(NSString*)nomeSom;
 @end

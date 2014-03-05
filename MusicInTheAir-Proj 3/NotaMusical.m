@@ -26,27 +26,32 @@
         [self setSom:nomeSom];
 
         //Corpo físico para a nota cair pela tela! :)
-        imagemNota.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:imagemNota.size];
+        self.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:imagemNota.size];
         
         //Define como dynamic para que seja afetado pela gravidade
-        imagemNota.physicsBody.dynamic=YES;
+        self.physicsBody.dynamic=YES;
 
         //Não deixa ele rodar pela tela
-        imagemNota.physicsBody.allowsRotation=NO;
+        self.physicsBody.allowsRotation=NO;
         
         //definir o tamanho da imagem. tks Juh :)
         [imagemNota setScale:0.2];
         
         //Define que a nota sera afetada pela gravidade do mundo
-        imagemNota.physicsBody.affectedByGravity=YES;
+        self.physicsBody.affectedByGravity=YES;
         
         //Define a elasticidade da nota musical
-        imagemNota.physicsBody.restitution=0;
+        self.physicsBody.restitution=0;
         
         //Usa a colisão precisa
-        imagemNota.physicsBody.usesPreciseCollisionDetection=YES;
+        self.physicsBody.usesPreciseCollisionDetection=YES;
+        
+        //Define um nome para a nota
+        [self setName:nomeSom];
         
         [self addChild:imagemNota];
+        
+        NSLog(@"%@",self.name);
     }
     
     return self;
@@ -55,5 +60,5 @@
 -(void)tocarSom{
     [self runAction:[SKAction playSoundFileNamed:[self som] waitForCompletion:NO]];
 }
-
+ 
 @end

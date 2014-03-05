@@ -25,5 +25,7 @@ static const UInt32 JogadorCategory = 0x1 << 1;
 
 @property UIButton *moverDir;
 @property UIButton *moverEsq;
+@property Jogador *jogador;
+@property NSMutableArray *notasMusicais;
 
 @end
