@@ -43,11 +43,23 @@
         //Define a elasticidade da nota musical
         self.physicsBody.restitution=0;
         
+<<<<<<< HEAD
+        //Determina a categoria da nota, para tratar a colisão
+        imagemNota.physicsBody.categoryBitMask=NotaCategory;
+        
+        //Determina com qual categoria irá colidir
+       // imagemNota.physicsBody.contactTestBitMask=
+=======
         //Usa a colisão precisa
+<<<<<<< HEAD
         self.physicsBody.usesPreciseCollisionDetection=YES;
         
         //Define um nome para a nota
         [self setName:nomeSom];
+=======
+        imagemNota.physicsBody.usesPreciseCollisionDetection=YES;
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
         
         [self addChild:imagemNota];
         
