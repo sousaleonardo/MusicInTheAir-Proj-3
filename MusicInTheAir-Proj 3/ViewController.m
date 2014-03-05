@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import "MyScene.h"
-#import "CenaMenu.h"
-
 
 @implementation ViewController
 
@@ -17,16 +15,18 @@
 {
     [super viewDidLoad];
 
+    // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
-    SKScene * scene = [CenaMenu sceneWithSize:skView.bounds.size];
+    // Create and configure the scene.
+    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    // Present the scene.
     [skView presentScene:scene];
 }
-
-
 
 - (BOOL)shouldAutorotate
 {

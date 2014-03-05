@@ -31,8 +31,6 @@
         
         [self calcularPosicoesX];
         
-<<<<<<< HEAD
-=======
         //Cria um jogador
         Jogador *jogador=[[Jogador alloc]initJogador:1 :self->posicoesX[0]];
         
@@ -59,7 +57,6 @@
         [self addChild:jogador];
         
             NSLog(@"carregou");
->>>>>>> FETCH_HEAD
     }
          
     
@@ -105,6 +102,10 @@
     
     [self addChild:nota];
 }
+-(void)tocarNota:(NotaMusical*)nota{
+    [nota tocarSom];
+    NSLog(@"colisão");
+}
 
 -(void)didBeginContact:(SKPhysicsContact *)contact{
   //  if(self.perdeu)
@@ -129,18 +130,9 @@
     if ((firstBody.categoryBitMask == NotaCategory))
     {
         //Animar jogador atirando
+        //firstBody
         //Tocar som da nota acertada
         
-        [self runAction:[SKAction playSoundFileNamed:firstBody.node.name waitForCompletion:YES]];
-        [firstBody.node removeFromParent];
-        
-    }else if(secondBody.contactTestBitMask==JogadorCategory){
-        //secondBody];
-        //NotaMusical *nota=secondBody.node.parent;
-        NSLog(@"%@", secondBody.node.name);
-        NSLog(@"%@",firstBody.node.name);
-        
-        //[nota tocarSom];
     }
 
 }
