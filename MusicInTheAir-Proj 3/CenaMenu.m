@@ -14,7 +14,11 @@
     if (self = [super initWithSize:size]){
         SKSpriteNode *imagemFundo = [[SKSpriteNode alloc]initWithImageNamed:@"exemplo"];
         
+<<<<<<< HEAD
         [imagemFundo setPosition:CGPointMake(self.size.width/2, self.size.height/2)];
+=======
+        UIButton *Iniciar;
+>>>>>>> FETCH_HEAD
         
         [imagemFundo setSize:CGSizeMake(self.size.width, self.size.height)];
         

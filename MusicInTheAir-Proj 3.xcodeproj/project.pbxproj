@@ -149,19 +149,23 @@
 				C554835918BE7B3700756EFC /* Sons */,
 				C554834E18BE785F00756EFC /* Imagens */,
 				C551388718BE614B00DFA12E /* AppDelegate.h */,
+				C551388818BE614B00DFA12E /* AppDelegate.m */,
 				3C54313118BE8DB5003BE26D /* Jogador.h */,
 				3C54313218BE8DB5003BE26D /* Jogador.m */,
-				C551388818BE614B00DFA12E /* AppDelegate.m */,
 				C551388A18BE614B00DFA12E /* Main_iPhone.storyboard */,
 				C551388D18BE614B00DFA12E /* Main_iPad.storyboard */,
 				C551389018BE614B00DFA12E /* ViewController.h */,
 				C551389118BE614B00DFA12E /* ViewController.m */,
 				C551389318BE614B00DFA12E /* MyScene.h */,
 				C551389418BE614B00DFA12E /* MyScene.m */,
+<<<<<<< HEAD
 				3C3F005218C1276900468224 /* CenaMenu.h */,
 				3C3F005318C1276900468224 /* CenaMenu.m */,
 				3C54312F18BE8D69003BE26D /* NotaMusical.m */,
+=======
+>>>>>>> FETCH_HEAD
 				3C54312E18BE8D5D003BE26D /* NotaMusical.h */,
+				3C54312F18BE8D69003BE26D /* NotaMusical.m */,
 				C551389818BE614B00DFA12E /* Images.xcassets */,
 				C551387F18BE614B00DFA12E /* Supporting Files */,
 			);

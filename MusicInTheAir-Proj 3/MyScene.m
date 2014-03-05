@@ -26,31 +26,49 @@
         //Define a gravidade da SKScene
         self.physicsWorld.gravity=CGVectorMake(0, -10);
         
+        //Determina o delegate para colisão como a propria SKScene
+        self.physicsWorld.contactDelegate=self;
+        
         [self calcularPosicoesX];
         
+<<<<<<< HEAD
+=======
+        //Cria um jogador
+        Jogador *jogador=[[Jogador alloc]initJogador:1 :self->posicoesX[0]];
+        
+        [jogador setPosicaoAtual:0];
+        [jogador setPosition:CGPointMake(self->posicoesX[0], 100)];
+
+        //Define a categoria p jogador e com qual categoria ele colidirá
+        jogador.physicsBody.categoryBitMask=JogadorCategory;
+        jogador.physicsBody.contactTestBitMask=NotaCategory;
+        
+        
+        SKSpriteNode *not=[SKSpriteNode spriteNodeWithImageNamed:@"nota1"];
+        
+        [not setScale:0.2];
+        [not setPosition:CGPointMake(self->posicoesX[0], 900)];
+        not.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:not.size];
+        not.physicsBody.dynamic=YES ;
+        
+        not.physicsBody.categoryBitMask=NotaCategory;
+        not.physicsBody.contactTestBitMask=JogadorCategory;
+        
+        [self addChild:not];
+        [self addChild:jogador];
+        
+            NSLog(@"carregou");
+>>>>>>> FETCH_HEAD
     }
+         
     
     return self;
 }
-
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    NotaMusical *nota=[[NotaMusical alloc]initNota:@"beep.wav"];
-    
-    [nota setPosition:CGPointMake(self->posicoesX[0],500)];
-    
-    NotaMusical *nota2=[[NotaMusical alloc]initNota:@"beep.wav"];
-    
-    [nota2 setPosition:CGPointMake(self->posicoesX[1],500)];
-    NotaMusical *nota3=[[NotaMusical alloc]initNota:@"beep.wav"];
-    
-    [nota3 setPosition:CGPointMake(self->posicoesX[2],500)];
-    
-    [self addChild:nota];
-    [self addChild:nota2];
-    [self addChild:nota3];
+
 }
 
--(void)update:(CFTimeInterval)currentTime {
+-(void)update:(NSTimeInterval)currentTime{
     
 }
 
@@ -71,6 +89,51 @@
     
 }
 
+-(void)criarNotas{
+    
+    NotaMusical *nota=[[NotaMusical alloc]initNota:@"beep.wav"];
+    
+    //Define a categoria para nota p/ tratar colisao :(
+    nota.physicsBody.categoryBitMask=NotaCategory;
+    nota.physicsBody.contactTestBitMask=JogadorCategory;
+    
+    int posicaoX=arc4random()%2;
+    
+    [nota setPosition:CGPointMake(self->posicoesX[posicaoX], self.size.height)];
+    [self addChild:nota];
+}
+-(void)tocarNota:(NotaMusical*)nota{
+    [nota tocarSom];
+    NSLog(@"colisão");
+}
 
+-(void)didBeginContact:(SKPhysicsContact *)contact{
+  //  if(self.perdeu)
+       // return;
+    NSLog(@"colidiu");
+    // Organiza os corpos de acordo com o valor da categoria. Isto é feito para facilitar a comparação mais em baixo
+    SKPhysicsBody *firstBody, *secondBody;
+    
+    if (contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask)
+    {
+        firstBody = contact.bodyA;
+        secondBody = contact.bodyB;
+    }
+    else
+    {
+        firstBody = contact.bodyB;
+        secondBody = contact.bodyA;
+    }
+    
+    
+    // Compara as máscaras de categoria com os valores que nós usamos para os objetos do jogo
+    if ((firstBody.categoryBitMask & NotaCategory) != 0)
+    {
+        [self tocarNota:firstBody];
+    }else{
+        [self tocarNota:secondBody];
+    }
+
+}
 
 @end
