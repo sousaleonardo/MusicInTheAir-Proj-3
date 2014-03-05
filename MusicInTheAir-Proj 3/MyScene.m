@@ -31,6 +31,8 @@
         
         [self calcularPosicoesX];
         
+<<<<<<< HEAD
+=======
         //Cria um jogador
         Jogador *jogador=[[Jogador alloc]initJogador:1 :self->posicoesX[0]];
         
@@ -57,6 +59,7 @@
         [self addChild:jogador];
         
             NSLog(@"carregou");
+>>>>>>> FETCH_HEAD
     }
          
     
