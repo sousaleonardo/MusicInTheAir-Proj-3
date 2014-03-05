@@ -47,7 +47,7 @@
         imagemNota.physicsBody.categoryBitMask=NotaCategory;
         
         //Determina com qual categoria irá colidir
-        imagemNota.physicsBody.contactTestBitMask=
+       // imagemNota.physicsBody.contactTestBitMask=
         
         [self addChild:imagemNota];
     }

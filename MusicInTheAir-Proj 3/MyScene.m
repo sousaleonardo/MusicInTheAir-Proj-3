@@ -28,7 +28,6 @@
         
         [self calcularPosicoesX];
         
-        
     }
     
     return self;
