@@ -102,10 +102,6 @@
     
     [self addChild:nota];
 }
--(void)tocarNota:(NotaMusical*)nota{
-    [nota tocarSom];
-    NSLog(@"colisão");
-}
 
 -(void)didBeginContact:(SKPhysicsContact *)contact{
   //  if(self.perdeu)
@@ -130,8 +126,16 @@
     if ((firstBody.categoryBitMask == NotaCategory))
     {
         //Animar jogador atirando
-        //firstBody
+        //
+        
+        
         //Tocar som da nota acertada
+        [self runAction:[SKAction playSoundFileNamed:firstBody.node.name waitForCompletion:NO]];
+
+        //Remove o node da nota da SKScene
+        firstBody.node.removeFromParent;
+        
+        
         
     }
 
