@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>F8BCFC28-921C-4291-BFF5-361B8F569FF1</string>
+=======
+	<string>AD0606E9-5893-4738-AFEE-5310B5B1051A</string>
+>>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectName</key>
 	<string>MusicInTheAir-Proj 3</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -18,7 +22,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A44C4BD7-1632-4026-95BE-5121A7D996EA</key>
-		<string>../..</string>
+		<string>../../alterado</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sousaleonardo/MusicInTheAir-Proj-3.git</string>
@@ -28,6 +32,14 @@
 	<string>A44C4BD7-1632-4026-95BE-5121A7D996EA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A44C4BD7-1632-4026-95BE-5121A7D996EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MusicInTheAir-Proj-3</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
