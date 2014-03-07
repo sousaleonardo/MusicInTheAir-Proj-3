@@ -8,20 +8,29 @@
 
 #import "ViewController.h"
 #import "MyScene.h"
-
+#import "CenaMenu.h"
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    //inserindo musica de fundo
+    NSError *erro;
+    NSURL *musicaFundoURL = [[NSBundle mainBundle] URLForResource:@"bg_som" withExtension:@"mp3"];
+    self.musicaFundo = [[AVAudioPlayer alloc] initWithContentsOfURL:musicaFundoURL error:&erro];
+    self.musicaFundo.numberOfLoops = -1;
+    [self.musicaFundo setVolume:0.03f];
+    [self.musicaFundo prepareToPlay];
+    [self.musicaFundo play];
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [CenaMenu sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
@@ -47,5 +56,4 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
-
 @end

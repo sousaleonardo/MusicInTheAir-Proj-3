@@ -8,14 +8,16 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface Jogador : SKNode
+@interface Jogador : SKSpriteNode
 
 @property int posicaoAtual;
+@property int vidas;
+
 @property NSArray *framesAnimacao;
 
 //Alterado o método construtor
-//-(id)initWithImageNamed:(NSString *)name :(float)posicao;
--(id)initJogador:(int)posicaoInicial :(float)posicaoX;
--(void)movimentar :(int)posicao;
+-(id)initWithImageNamed:(NSString *)name :(float)posicao;
+
+-(void)movimentar :(float)posicao;
 
 @end

@@ -7,12 +7,13 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface NotaMusical : SKNode
 
-@property NSString *som;
+@property NSURL *som;
 
--(id)initNota:(NSString*)nomeSom;
+-(id)initNota:(NSURL*)nomeSom;
 -(void)tocarSom;
-+(void)tocarSom:(NSString*)nomeSom;
+
 @end
