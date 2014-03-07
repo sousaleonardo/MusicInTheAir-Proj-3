@@ -12,10 +12,11 @@
 
 @synthesize som;
 
--(id)initNota:(NSString*)nomeSom{
+-(id)initNota:(NSURL*)nomeSom{
     self=[super init];
     
     if (self!=nil) {
+        
         //Sorteia um nome para a imagem =]        
         NSString *nomeImagem=[NSString stringWithFormat:@"nota%d",(arc4random()%2+1)];
 
@@ -24,18 +25,18 @@
         
         //Define o som que será tocado ao ocorrer a colisão com o
         [self setSom:nomeSom];
-
+        
+        //definir o tamanho da imagem. tks Juh :)
+        [imagemNota setScale:0.2];
+        
         //Corpo físico para a nota cair pela tela! :)
         self.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:imagemNota.size];
-        
+
         //Define como dynamic para que seja afetado pela gravidade
         self.physicsBody.dynamic=YES;
 
         //Não deixa ele rodar pela tela
-        self.physicsBody.allowsRotation=NO;
-        
-        //definir o tamanho da imagem. tks Juh :)
-        [imagemNota setScale:0.2];
+        self.physicsBody.allowsRotation=NO;        
         
         //Define que a nota sera afetada pela gravidade do mundo
         self.physicsBody.affectedByGravity=YES;
@@ -46,19 +47,36 @@
         //Usa a colisão precisa
         self.physicsBody.usesPreciseCollisionDetection=YES;
         
-        //Define um nome para a nota
-        [self setName:nomeSom];
+        self.physicsBody.density=0.05;
+        
+        NSArray *arquivo=[nomeSom pathComponents];
+        
+        //Sera usado na identificacao da colisao
+        [self setName:[arquivo lastObject]];
+        
+        //Importado projeto Julia
+        [self setSom:nomeSom];
         
         [self addChild:imagemNota];
-        
-        NSLog(@"%@",self.name);
     }
     
     return self;
 }
-
 -(void)tocarSom{
-    [self runAction:[SKAction playSoundFileNamed:[self som] waitForCompletion:NO]];
+//    AVAudioPlayer *somTocar = [[AVAudioPlayer alloc] initWithContentsOfURL:self.som error:nil];
+    
+    NSURL *urltst=[[NSBundle mainBundle]URLForResource:@"beep" withExtension:@"wav"];
+    AVAudioPlayer *somTocar = [[AVAudioPlayer alloc]initWithContentsOfURL:urltst error:Nil];
+    
+
+    [somTocar setCurrentTime:0];
+    [somTocar setEnableRate:YES];
+    [somTocar setVolume:100.0];
+    [somTocar setRate:0.2];
+    
+    [somTocar prepareToPlay];
+    [somTocar play];
+    
+    //[self runAction:[SKAction playSoundFileNamed:[self som]  waitForCompletion:NO]];
 }
- 
 @end
